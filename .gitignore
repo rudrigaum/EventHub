@@ -1,0 +1,61 @@
+# Xcode
+.DS_Store
+*.xcodeproj/*.user
+*.xcworkspace/*.xcuserdatad
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata/
+*.xcarchive
+*.ipa
+*.xccheckout
+*.xcassets/
+build/
+DerivedData/
+*/DerivedData/
+.build/
+**/.swiftpm/
+*.app
+*.dSYM
+*.o
+*.a
+*.modulemap
+*.swiftdoc
+*.swiftmodule
+*.smap
+*.lldb
+*.log
+*.xcscheme
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+.bundle/
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+
+# Other
+.env
+.env.*
+.secrets
+*.bak
+*.pyc
+*.swp
+*~
+.fseventsd/
+.Spotlight-V100/
+.Trashes/
+Icon?
+.DocumentRevisions-V100/
+.TemporaryItems/
+.Trash/
+.terraform/
+*.tfstate
+*.tfvars
