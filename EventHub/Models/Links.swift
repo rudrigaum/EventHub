@@ -17,3 +17,36 @@ struct Links: Codable {
     }
 }
 
+struct EventLinks: Codable {
+    let linksSelf: First
+    let venues, attractions: [First]?
+
+    enum CodingKeys: String, CodingKey {
+        case linksSelf = "self"
+        case venues, attractions
+    }
+}
+
+struct AttractionLinks: Codable {
+    let linksSelf: First
+
+    enum CodingKeys: String, CodingKey {
+        case linksSelf = "self"
+    }
+}
+
+struct First: Codable {
+    let href: String
+}
+
+enum Locale: String, Codable {
+    case enDe = "en-de"
+    case enUs = "en-us"
+}
+
+enum AttractionType: String, Codable {
+    case attraction = "attraction"
+}
+
+
+

@@ -13,3 +13,7 @@ struct Classification: Codable {
     let subGenre, type, subType: Genre?
     let family: Bool
 }
+
+struct Genre: Codable {
+    let id, name: String
+}

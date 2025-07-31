@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Venue: Codable {
+struct Venue: Codable, Identifiable {
     let name: String
     let type: VenueType
     let id: String
@@ -36,4 +36,42 @@ struct Venue: Codable {
         case name, type, id, test, url, locale, images, postalCode, timezone, city, state, country, address, location, markets, dmas, social, boxOfficeInfo, parkingDetail, accessibleSeatingDetail, generalInfo, upcomingEvents, ada
         case links = "_links"
     }
+}
+
+struct VenueAddress: Codable {
+    let line1: String
+    let line2: String?
+}
+
+struct City: Codable {
+    let name: String
+}
+
+struct Country: Codable {
+    let name: Name
+    let countryCode: CountryCode
+}
+
+enum CountryCode: String, Codable {
+    case ca = "CA"
+    case gb = "GB"
+    case us = "US"
+}
+
+enum Name: String, Codable {
+    case canada = "Canada"
+    case greatBritain = "Great Britain"
+    case unitedStatesOfAmerica = "United States Of America"
+}
+
+struct State: Codable {
+    let name, stateCode: String
+}
+
+enum VenueType: String, Codable {
+    case venue = "venue"
+}
+
+struct Location: Codable {
+    let longitude, latitude: String
 }
