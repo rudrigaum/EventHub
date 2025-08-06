@@ -14,7 +14,7 @@ struct Venue: Codable, Identifiable {
     let test: Bool
     let url: String?
     let locale: Locale
-    let images: [Image]?
+    let images: [EventImage]?
     let postalCode: String
     let timezone: Timezone
     let city: City

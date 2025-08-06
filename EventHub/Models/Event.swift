@@ -14,7 +14,7 @@ struct Event: Codable, Identifiable {
     let test: Bool
     let url: String
     let locale: Locale
-    let images: [Image]
+    let images: [EventImage]
     let sales: Sales
     let dates: Dates
     let classifications: [Classification]?

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Image: Codable {
+struct EventImage: Codable {
     let ratio: Ratio?
     let url: String
     let width, height: Int

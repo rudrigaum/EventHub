@@ -15,7 +15,7 @@ struct Attraction: Codable, Identifiable {
     let url: String
     let locale: Locale
     let externalLinks: ExternalLinks?
-    let images: [Image]
+    let images: [EventImage]
     let classifications: [Classification]
     let upcomingEvents: [String: Int]
     let links: AttractionLinks
