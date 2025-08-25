@@ -8,5 +8,5 @@
 import Foundation
 
 struct TicketLimit: Codable {
-    let info, id: String
+    let info, id: String?
 }

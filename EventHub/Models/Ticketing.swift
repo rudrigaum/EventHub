@@ -10,5 +10,5 @@ import Foundation
 struct Ticketing: Codable {
     let safeTix: AllInclusivePricing?
     let allInclusivePricing: AllInclusivePricing
-    let id: ID
+    let id: String?
 }

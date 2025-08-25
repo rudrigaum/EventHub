@@ -9,7 +9,7 @@ import Foundation
 
 struct Seatmap: Codable {
     let staticURL: String
-    let id: String
+    let id: String?
 
     enum CodingKeys: String, CodingKey {
         case staticURL = "staticUrl"

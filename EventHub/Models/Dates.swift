@@ -19,21 +19,21 @@ struct Dates: Codable {
 struct Start: Codable {
     let localDate: String
     let localTime: String?
-    let dateTime: Date?
+    let dateTime: String?
     let dateTBD, dateTBA, timeTBA, noSpecificTime: Bool
 }
 
 struct End: Codable {
     let localTime: String?
-    let dateTime: Date?
+    let dateTime: String?
     let approximate, noSpecificTime: Bool
     let localDate: String?
 }
 
 struct Access: Codable {
-    let startDateTime: Date
+    let startDateTime: String?
     let startApproximate: Bool
-    let endDateTime: Date?
+    let endDateTime: String?
     let endApproximate: Bool
 }
 

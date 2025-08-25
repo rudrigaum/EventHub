@@ -9,5 +9,5 @@ import Foundation
 
 struct AgeRestrictions: Codable {
     let legalAgeEnforced: Bool
-    let id: String
+    let id: String?
 }

@@ -9,5 +9,5 @@ import Foundation
 
 struct Accessibility: Codable {
     let ticketLimit: Int?
-    let id: String
+    let id: String?
 }

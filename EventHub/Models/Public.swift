@@ -8,7 +8,7 @@
 import Foundation
 
 struct Public: Codable {
-    let startDateTime: Date?
+    let startDateTime: String?
     let startTBD, startTBA: Bool
-    let endDateTime: Date?
+    let endDateTime: String?
 }
